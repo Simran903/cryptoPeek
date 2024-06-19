@@ -13,7 +13,7 @@ import {
 
 const Navbar = () => {
   return (
-    <div className="h-16 flex align-middle items-center">
+    <div className="pt-5 h-16 flex align-middle items-center">
       <img src="./logo.png" alt="" width="150px" />
       <NavigationMenu className="mx-auto">
         <NavigationMenuList className="space-x-10">
