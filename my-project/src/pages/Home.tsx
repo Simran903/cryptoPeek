@@ -5,15 +5,15 @@ const Home = () => {
       <div className="flex flex-col justify-center items-center pt-12">
         <img src="./home-logo.png" alt="" style={{ width: "250px" }} />
         <div className="flex flex-col justify-center items-center pt-6">
-          <h1 className="text-7xl text-lime-400 font-extrabold">LARGEST</h1>
-          <h3 className="text-4xl tracking-widest font-semibold pb-8 text-white">
+          <h1 className="text-7xl dark:text-lime-400 font-extrabold text-[#382C82]">LARGEST</h1>
+          <h3 className="text-4xl tracking-widest font-semibold pb-8 dark:text-white text-[#9513a1]">
             CRYPTO MARKETPLACE
           </h3>
           <div className="flex flex-col justify-center items-center pt-6">
-            <span className="text-lime-200">
+            <span className="text-sky-950 dark:text-lime-200">
               "Welcome to the world's largest cryptocurrency.
             </span>
-            <span className="text-lime-200">
+            <span className=" text-fuchsia-800 dark:text-lime-200">
               Sign up to explore more about cryptos."
             </span>
           </div>

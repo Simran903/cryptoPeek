@@ -9,6 +9,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
+import { ModeToggle } from "./ui/mode-toggle";
 
 
 const Navbar = () => {
@@ -34,6 +35,7 @@ const Navbar = () => {
             <DropdownMenuItem>INR</DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
+        <ModeToggle />
       </div>
     </div>
   );
