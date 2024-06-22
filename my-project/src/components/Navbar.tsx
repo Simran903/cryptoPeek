@@ -10,6 +10,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { ModeToggle } from "./ui/mode-toggle";
+import { motion } from "framer-motion";
 
 
 const Navbar = () => {
@@ -18,23 +19,53 @@ const Navbar = () => {
       <img src="./logo.png" alt="" width="150px" />
       <NavigationMenu className="mx-auto">
         <NavigationMenuList className="space-x-10">
-          <NavigationMenuItem className="inline-flex cursor-pointer h-9 w-max items-center justify-center rounded-md bg-lime-400 px-4 py-2 text-sm font-medium text-gray-900 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-800">HOME
-          </NavigationMenuItem>
-          <NavigationMenuItem className="inline-flex cursor-pointer h-9 w-max items-center justify-center rounded-md bg-lime-400 px-4 py-2 text-sm font-medium text-gray-900 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-800">FEATURES
-          </NavigationMenuItem>
-          <NavigationMenuItem className="inline-flex cursor-pointer h-9 w-max items-center justify-center rounded-md bg-lime-400 px-4 py-2 text-sm font-medium text-gray-900 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-800">PRICING
-          </NavigationMenuItem>
+          <motion.div
+            className="box"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
+          >
+            <NavigationMenuItem className="bg-gradient-to-r from-indigo-900 via-violet-900 to-indigo-900 hover:bg-gradient-to-br text-white rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 cursor-pointer">HOME
+            </NavigationMenuItem>
+          </motion.div>
+          <motion.div
+            className="box"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
+          >
+            <NavigationMenuItem className="bg-gradient-to-r from-indigo-900 via-violet-900 to-indigo-900 hover:bg-gradient-to-br text-white rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 cursor-pointer">FEATURES
+            </NavigationMenuItem>
+          </motion.div>
+          <motion.div
+            className="box"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
+          >
+            <NavigationMenuItem className="bg-gradient-to-r from-indigo-900 via-violet-900 to-indigo-900 hover:bg-gradient-to-br text-white rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 cursor-pointer">PRICING
+            </NavigationMenuItem>
+          </motion.div>
         </NavigationMenuList>
       </NavigationMenu>
-      <div className="pr-12">
+      <div className="flex pr-12 gap-3">
+      <div className="">
         <DropdownMenu>
-          <DropdownMenuTrigger className=" inline-flex h-9 w-max items-center justify-center rounded-md bg-lime-400 px-4 py-2 text-sm font-medium text-gray-900 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-800">Currency</DropdownMenuTrigger>
+          <motion.div
+            className="box"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
+          >
+            <DropdownMenuTrigger className="bg-gradient-to-r from-indigo-900 via-violet-900 to-indigo-900 hover:bg-gradient-to-br text-white rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 cursor-pointer">Currency</DropdownMenuTrigger>
+          </motion.div>
           <DropdownMenuContent>
             <DropdownMenuItem>USD</DropdownMenuItem>
             <DropdownMenuItem>EUR</DropdownMenuItem>
             <DropdownMenuItem>INR</DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
+      </div>
         <ModeToggle />
       </div>
     </div>

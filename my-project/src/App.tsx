@@ -8,7 +8,7 @@ function App() {
 
   return (
     <ThemeProvider>
-      <div className="min-h-screen dark:bg-zinc-900 bg-slate-300">
+      <div className="min-h-screen dark:bg-[#092635] bg-[#e2ede9]">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

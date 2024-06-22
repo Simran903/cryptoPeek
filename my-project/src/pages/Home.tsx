@@ -1,11 +1,12 @@
 const Home = () => {
   return (
     <div className="">
-
       <div className="flex flex-col justify-center items-center pt-12">
         <img src="./home-logo.png" alt="" style={{ width: "250px" }} />
         <div className="flex flex-col justify-center items-center pt-6">
-          <h1 className="text-7xl dark:text-lime-400 font-extrabold text-[#382C82]">LARGEST</h1>
+          <h1 className="text-7xl dark:text-lime-400 font-extrabold text-[#382C82]">
+            LARGEST
+          </h1>
           <h3 className="text-4xl tracking-widest font-semibold pb-8 dark:text-white text-[#9513a1]">
             CRYPTO MARKETPLACE
           </h3>
@@ -29,7 +30,7 @@ const Home = () => {
         <div className="relative">
           <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
             <svg
-              className="w-4 h-4 text-lime-700 dark:text-gray-400"
+              className="w-4 h-4 dark:text-lime-700 text-zinc-800"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -47,13 +48,13 @@ const Home = () => {
           <input
             type="search"
             id="default-search"
-            className="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            className="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-full bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 transition-shadow duration-300 hover:shadow-[0_0_15px_rgba(30,27,75,0.5)]"
             placeholder="Search crypto..."
             required
           />
           <button
             type="submit"
-            className="absolute end-2.5 bottom-2.5 inline-flex cursor-pointer h-9 w-max items-center justify-center rounded-md bg-lime-400 px-4 py-2 text-sm font-medium text-gray-900 bg-gradient-to-r from-lime-800 via-lime-400 to-lime-500 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-800"
+            className="absolute end-2.5 bottom-2.5 inline-flex cursor-pointer h-9 w-max items-center justify-center rounded-full dark:bg-lime-400 px-4 py-2 text-sm font-medium bg-gradient-to-r from-indigo-900 via-violet-900 to-indigo-900 hover:bg-gradient-to-br text-white text-center"
           >
             Search
           </button>
